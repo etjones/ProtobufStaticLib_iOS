@@ -38,7 +38,7 @@
 		D7E05B4119D4BC4A00B78A42 /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B1B19D4BC4A00B78A42 /* unknown_field_set.cc */; };
 		D7E05B4219D4BC4A00B78A42 /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B1E19D4BC4A00B78A42 /* wire_format.cc */; };
 		D7E05B4319D4BC4A00B78A42 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B2119D4BC4A00B78A42 /* wire_format_lite.cc */; };
-		D7E05B4619D4BD2A00B78A42 /* google in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7E05B4519D4BD1F00B78A42 /* google */; };
+		D7E05B9519D4F1A000B78A42 /* google in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7E05B9419D4F18C00B78A42 /* google */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,15 +48,15 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
-				D7E05B4619D4BD2A00B78A42 /* google in CopyFiles */,
+				D7E05B9519D4F1A000B78A42 /* google in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtobufStaticLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufStaticLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtobufStaticLib_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufStaticLib_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E05AA619D4BBAA00B78A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E05AAF19D4BC4A00B78A42 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		D7E05AB219D4BC4A00B78A42 /* descriptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.cc; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		D7E05B2219D4BC4A00B78A42 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
 		D7E05B2319D4BC4A00B78A42 /* wire_format_lite.lo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wire_format_lite.lo; sourceTree = "<group>"; };
 		D7E05B2419D4BC4A00B78A42 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
-		D7E05B4519D4BD1F00B78A42 /* google */ = {isa = PBXFileReference; lastKnownFileType = folder; name = google; path = ProtobufStaticLib/google; sourceTree = SOURCE_ROOT; };
+		D7E05B9419D4F18C00B78A42 /* google */ = {isa = PBXFileReference; lastKnownFileType = folder; path = google; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,8 +192,9 @@
 		D7E05A8F19D4BBAA00B78A42 = {
 			isa = PBXGroup;
 			children = (
-				D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib */,
-				D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLibTests */,
+				D7E05B9419D4F18C00B78A42 /* google */,
+				D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib_iOS */,
+				D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */,
 				D7E05A9919D4BBAA00B78A42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -201,27 +202,27 @@
 		D7E05A9919D4BBAA00B78A42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib.a */,
-				D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLibTests.xctest */,
+				D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */,
+				D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib */ = {
+		D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D7E05B4519D4BD1F00B78A42 /* google */,
 				D7E05AAF19D4BC4A00B78A42 /* config.h */,
 				D7E05AB019D4BC4A00B78A42 /* google */,
 			);
-			path = ProtobufStaticLib;
+			path = ProtobufStaticLib_iOS;
 			sourceTree = "<group>";
 		};
-		D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLibTests */ = {
+		D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */ = {
 			isa = PBXGroup;
 			children = (
 				D7E05AA519D4BBAA00B78A42 /* Supporting Files */,
 			);
+			name = ProtobufStaticLib_iOSTests;
 			path = ProtobufStaticLibTests;
 			sourceTree = "<group>";
 		};
@@ -392,9 +393,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7E05A9719D4BBAA00B78A42 /* ProtobufStaticLib */ = {
+		D7E05A9719D4BBAA00B78A42 /* ProtobufStaticLib_iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7E05AA919D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib" */;
+			buildConfigurationList = D7E05AA919D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOS" */;
 			buildPhases = (
 				D7E05A9419D4BBAA00B78A42 /* Sources */,
 				D7E05A9519D4BBAA00B78A42 /* Frameworks */,
@@ -404,14 +405,14 @@
 			);
 			dependencies = (
 			);
-			name = ProtobufStaticLib;
+			name = ProtobufStaticLib_iOS;
 			productName = ProtobufStaticLib;
-			productReference = D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib.a */;
+			productReference = D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLibTests */ = {
+		D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLibTests" */;
+			buildConfigurationList = D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOSTests" */;
 			buildPhases = (
 				D7E05A9F19D4BBAA00B78A42 /* Sources */,
 				D7E05AA019D4BBAA00B78A42 /* Frameworks */,
@@ -421,9 +422,9 @@
 			);
 			dependencies = (
 			);
-			name = ProtobufStaticLibTests;
+			name = ProtobufStaticLib_iOSTests;
 			productName = ProtobufStaticLibTests;
-			productReference = D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLibTests.xctest */;
+			productReference = D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -443,7 +444,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7E05A9319D4BBAA00B78A42 /* Build configuration list for PBXProject "ProtobufStaticLib" */;
+			buildConfigurationList = D7E05A9319D4BBAA00B78A42 /* Build configuration list for PBXProject "ProtobufStaticLib_iOS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -455,8 +456,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7E05A9719D4BBAA00B78A42 /* ProtobufStaticLib */,
-				D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLibTests */,
+				D7E05A9719D4BBAA00B78A42 /* ProtobufStaticLib_iOS */,
+				D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -603,7 +604,7 @@
 					"$(SRCROOT)/$(TARGET_NAME)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ProtobufStaticLib;
+				PRODUCT_NAME = ProtobufStaticLib_iOS;
 				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
@@ -618,7 +619,7 @@
 					"$(SRCROOT)/$(TARGET_NAME)",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = ProtobufStaticLib;
+				PRODUCT_NAME = ProtobufStaticLib_iOS;
 				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
@@ -637,7 +638,7 @@
 				);
 				INFOPLIST_FILE = ProtobufStaticLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ProtobufStaticLibTests;
+				PRODUCT_NAME = ProtobufStaticLib_iOSTests;
 			};
 			name = Debug;
 		};
@@ -650,14 +651,14 @@
 				);
 				INFOPLIST_FILE = ProtobufStaticLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ProtobufStaticLibTests;
+				PRODUCT_NAME = ProtobufStaticLib_iOSTests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7E05A9319D4BBAA00B78A42 /* Build configuration list for PBXProject "ProtobufStaticLib" */ = {
+		D7E05A9319D4BBAA00B78A42 /* Build configuration list for PBXProject "ProtobufStaticLib_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7E05AA719D4BBAA00B78A42 /* Debug */,
@@ -666,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7E05AA919D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib" */ = {
+		D7E05AA919D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7E05AAA19D4BBAA00B78A42 /* Debug */,
@@ -675,7 +676,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLibTests" */ = {
+		D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7E05AAD19D4BBAA00B78A42 /* Debug */,
