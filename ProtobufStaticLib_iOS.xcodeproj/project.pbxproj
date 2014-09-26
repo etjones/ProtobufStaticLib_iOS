@@ -38,7 +38,6 @@
 		D7E05B4119D4BC4A00B78A42 /* unknown_field_set.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B1B19D4BC4A00B78A42 /* unknown_field_set.cc */; };
 		D7E05B4219D4BC4A00B78A42 /* wire_format.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B1E19D4BC4A00B78A42 /* wire_format.cc */; };
 		D7E05B4319D4BC4A00B78A42 /* wire_format_lite.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05B2119D4BC4A00B78A42 /* wire_format_lite.cc */; };
-		D7E05B9519D4F1A000B78A42 /* google in CopyFiles */ = {isa = PBXBuildFile; fileRef = D7E05B9419D4F18C00B78A42 /* google */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -48,7 +47,6 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
-				D7E05B9519D4F1A000B78A42 /* google in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
