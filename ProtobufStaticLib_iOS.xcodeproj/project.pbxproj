@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D73A546819D5E45E000371FB /* google in CopyFiles */ = {isa = PBXBuildFile; fileRef = D73A546719D5E44A000371FB /* google */; };
 		D7E05B2519D4BC4A00B78A42 /* descriptor.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05AB219D4BC4A00B78A42 /* descriptor.cc */; };
 		D7E05B2619D4BC4A00B78A42 /* descriptor.pb.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05AB519D4BC4A00B78A42 /* descriptor.pb.cc */; };
 		D7E05B2719D4BC4A00B78A42 /* descriptor_database.cc in Sources */ = {isa = PBXBuildFile; fileRef = D7E05AB919D4BC4A00B78A42 /* descriptor_database.cc */; };
@@ -47,12 +48,14 @@
 			dstPath = include;
 			dstSubfolderSpec = 16;
 			files = (
+				D73A546819D5E45E000371FB /* google in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D73A546719D5E44A000371FB /* google */ = {isa = PBXFileReference; lastKnownFileType = folder; name = google; path = ProtobufStaticLib_iOS/google; sourceTree = "<group>"; };
 		D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtobufStaticLib_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufStaticLib_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E05AA619D4BBAA00B78A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -166,7 +169,6 @@
 		D7E05B2219D4BC4A00B78A42 /* wire_format_lite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite.h; sourceTree = "<group>"; };
 		D7E05B2319D4BC4A00B78A42 /* wire_format_lite.lo */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = wire_format_lite.lo; sourceTree = "<group>"; };
 		D7E05B2419D4BC4A00B78A42 /* wire_format_lite_inl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wire_format_lite_inl.h; sourceTree = "<group>"; };
-		D7E05B9419D4F18C00B78A42 /* google */ = {isa = PBXFileReference; lastKnownFileType = folder; path = google; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +192,7 @@
 		D7E05A8F19D4BBAA00B78A42 = {
 			isa = PBXGroup;
 			children = (
-				D7E05B9419D4F18C00B78A42 /* google */,
+				D73A546719D5E44A000371FB /* google */,
 				D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib_iOS */,
 				D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */,
 				D7E05A9919D4BBAA00B78A42 /* Products */,
