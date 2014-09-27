@@ -57,8 +57,6 @@
 /* Begin PBXFileReference section */
 		D73A546719D5E44A000371FB /* google */ = {isa = PBXFileReference; lastKnownFileType = folder; name = google; path = ProtobufStaticLib_iOS/google; sourceTree = "<group>"; };
 		D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libProtobufStaticLib_iOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtobufStaticLib_iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D7E05AA619D4BBAA00B78A42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7E05AAF19D4BC4A00B78A42 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		D7E05AB219D4BC4A00B78A42 /* descriptor.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = descriptor.cc; sourceTree = "<group>"; };
 		D7E05AB319D4BC4A00B78A42 /* descriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = descriptor.h; sourceTree = "<group>"; };
@@ -179,13 +177,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D7E05AA019D4BBAA00B78A42 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -194,7 +185,6 @@
 			children = (
 				D73A546719D5E44A000371FB /* google */,
 				D7E05A9A19D4BBAA00B78A42 /* ProtobufStaticLib_iOS */,
-				D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */,
 				D7E05A9919D4BBAA00B78A42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -203,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */,
-				D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,23 +204,6 @@
 				D7E05AB019D4BC4A00B78A42 /* google */,
 			);
 			path = ProtobufStaticLib_iOS;
-			sourceTree = "<group>";
-		};
-		D7E05AA419D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				D7E05AA519D4BBAA00B78A42 /* Supporting Files */,
-			);
-			name = ProtobufStaticLib_iOSTests;
-			path = ProtobufStaticLibTests;
-			sourceTree = "<group>";
-		};
-		D7E05AA519D4BBAA00B78A42 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D7E05AA619D4BBAA00B78A42 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		D7E05AB019D4BC4A00B78A42 /* google */ = {
@@ -410,23 +382,6 @@
 			productReference = D7E05A9819D4BBAA00B78A42 /* libProtobufStaticLib_iOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOSTests" */;
-			buildPhases = (
-				D7E05A9F19D4BBAA00B78A42 /* Sources */,
-				D7E05AA019D4BBAA00B78A42 /* Frameworks */,
-				D7E05AA119D4BBAA00B78A42 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ProtobufStaticLib_iOSTests;
-			productName = ProtobufStaticLibTests;
-			productReference = D7E05AA319D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -437,9 +392,6 @@
 				ORGANIZATIONNAME = Saildrone;
 				TargetAttributes = {
 					D7E05A9719D4BBAA00B78A42 = {
-						CreatedOnToolsVersion = 6.0.1;
-					};
-					D7E05AA219D4BBAA00B78A42 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -457,20 +409,9 @@
 			projectRoot = "";
 			targets = (
 				D7E05A9719D4BBAA00B78A42 /* ProtobufStaticLib_iOS */,
-				D7E05AA219D4BBAA00B78A42 /* ProtobufStaticLib_iOSTests */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		D7E05AA119D4BBAA00B78A42 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7E05A9419D4BBAA00B78A42 /* Sources */ = {
@@ -508,13 +449,6 @@
 				D7E05B3619D4BC4A00B78A42 /* repeated_field.cc in Sources */,
 				D7E05B2819D4BC4A00B78A42 /* dynamic_message.cc in Sources */,
 				D7E05B3E19D4BC4A00B78A42 /* strutil.cc in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D7E05A9F19D4BBAA00B78A42 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,36 +559,6 @@
 			};
 			name = Release;
 		};
-		D7E05AAD19D4BBAA00B78A42 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ProtobufStaticLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ProtobufStaticLib_iOSTests;
-			};
-			name = Debug;
-		};
-		D7E05AAE19D4BBAA00B78A42 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ProtobufStaticLibTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = ProtobufStaticLib_iOSTests;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -672,15 +576,6 @@
 			buildConfigurations = (
 				D7E05AAA19D4BBAA00B78A42 /* Debug */,
 				D7E05AAB19D4BBAA00B78A42 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D7E05AAC19D4BBAA00B78A42 /* Build configuration list for PBXNativeTarget "ProtobufStaticLib_iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7E05AAD19D4BBAA00B78A42 /* Debug */,
-				D7E05AAE19D4BBAA00B78A42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
